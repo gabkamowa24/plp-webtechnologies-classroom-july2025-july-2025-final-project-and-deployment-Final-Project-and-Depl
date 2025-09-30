@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Kuwala Clean Energy</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="/index.html">Kuwala Clean Energy</a>
+      <button id="nav-toggle-4" class="nav-toggle" aria-label="Open menu">☰</button>
+      <nav id="main-nav-4" class="main-nav">
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/products.html">Products</a></li>
+          <li><a href="/contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Contact Us</h1>
+    <p>Questions about products, partnerships, or careers? Reach out — we’d love to hear from you.</p>
+
+    <section class="contact-grid">
+      <div class="contact-card">
+        <h3>Office</h3>
+        <p>Matawale, Zomba — Air wing road Awali shop #7</p>
+        <p>Phone: 098799624</p>
+        <p>Email: <a href="mailto:info@kuwalaenergy.org">info@kuwalaenergy.org</a></p>
+      </div>
+
+      <form id="contactForm" class="contact-form" novalidate>
+        <h3>Send a message</h3>
+        <label for="name">Full name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+        <p id="formMessage" class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2025 Kuwala Clean Energy</p>
+    </div>
+  </footer>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>

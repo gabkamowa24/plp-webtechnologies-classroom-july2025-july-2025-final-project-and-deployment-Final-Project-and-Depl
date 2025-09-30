@@ -1,0 +1,47 @@
+:root{
+  --accent:#0a7a5a;
+  --muted:#666;
+  --max-width:1100px;
+}
+*{box-sizing:border-box}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;line-height:1.5;margin:0;color:#111}
+.container{max-width:var(--max-width);margin:0 auto;padding:1rem}
+.site-header{background:#fff;box-shadow:0 1px 4px rgba(0,0,0,.06);position:sticky;top:0;z-index:50}
+.nav-wrap{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700;color:var(--accent);text-decoration:none}
+.main-nav ul{list-style:none;margin:0;padding:0;display:flex;gap:1rem}
+.main-nav a{text-decoration:none;color:inherit;padding:.5rem}
+.nav-toggle{display:none;background:none;border:0;font-size:1.3rem}
+.hero{background:linear-gradient(180deg, #f6fffa, #ffffff);padding:3rem 0;text-align:center}
+.hero h1{margin:0 0 .5rem;font-size:clamp(1.5rem,3vw,2.5rem)}
+.lead{color:var(--muted);max-width:60ch;margin:0.5rem auto 1rem}
+.btn{background:var(--accent);color:#fff;padding:.6rem 1rem;border-radius:8px;text-decoration:none;display:inline-block}
+.btn-outline{background:none;border:2px solid var(--accent);color:var(--accent)}
+.impact .cards{display:flex;gap:1rem;margin-top:1rem;flex-wrap:wrap}
+.card{flex:1;min-width:180px;background:#fff;padding:1rem;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.04);text-align:center}
+.products-preview .product-list{display:flex;gap:1rem;flex-wrap:wrap}
+.product{flex:1;min-width:180px;text-align:center}
+.product img{width:100%;height:140px;object-fit:cover;border-radius:6px}
+.cta-low{background:#f3fff7;padding:2rem;margin-top:1rem;text-align:center}
+.site-footer{background:#0c2b22;color:#fff;padding:2rem 0;margin-top:2rem}
+.footer-grid{display:flex;gap:2rem;flex-wrap:wrap}
+.team-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.member img{width:100%;height:160px;object-fit:cover;border-radius:8px}
+.product-catalog{display:grid;grid-template-columns:1fr;gap:1rem}
+.product-card{display:flex;gap:1rem;align-items:center;background:#fff;padding:1rem;border-radius:8px}
+.product-card img{width:140px;height:120px;object-fit:cover;border-radius:6px}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.contact-card{background:#fff;padding:1rem;border-radius:8px}
+.contact-form{background:#fff;padding:1rem;border-radius:8px}
+input,textarea{width:100%;padding:.6rem;border:1px solid #ddd;border-radius:6px;margin-bottom:.6rem}
+.form-message{color:var(--accent);margin-top:.5rem}
+.price{font-weight:700}
+@media (max-width:800px){
+  .main-nav{display:none}
+  .nav-toggle{display:block}
+  .product-card{flex-direction:column;align-items:flex-start}
+  .contact-grid{grid-template-columns:1fr}
+}
+
+/* simple utility */
+.more{text-align:right}
